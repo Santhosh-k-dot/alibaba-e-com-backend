@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "https://alibaba-girls-fashion.vercel.app",  //http://localhost:5173
+    origin: "https://alibaba-e-com-frontend.vercel.app",  //http://localhost:5173
     credentials: true,
   })
 );
