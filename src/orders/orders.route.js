@@ -26,8 +26,8 @@ router.post("/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: `http://Alibabahost:5173/success?session_id={CHECKOUT_SESSION_ID}`, //http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}
-      cancel_url: `//http://Alibabahost:5173/cancel`, //http://localhost:5173/cancel
+      success_url: `https://alibaba-e-com-frontend.vercel.app/success?session_id={CHECKOUT_SESSION_ID}`, //http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}
+      cancel_url: `https://alibaba-e-com-frontend.vercel.app/cancel`, //http://localhost:5173/cancel
     });
 
     res.json({ id: session.id });
